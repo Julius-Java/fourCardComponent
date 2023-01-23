@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%) ;
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    padding-top: 50px;
+    width: 95%;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+h2, h3 {
+    color: hsl(234, 12%, 34%);
+}
+
+.main-heading {
+    font-weight: 300;
+    color: hsl(229, 6%, 66%);
+}
+
+.sub-heading {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.more-info {
+    line-height: 1.5;
+}
+
+.box {
+    width: 400px;
+    height: 280px;
+    border-radius: 5px;
+    position: relative;
+    padding: 40px;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    background-color: white;
+}
+
+.row {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 1400px;
+    padding: 20px;
+}
+
+.first-div,
+.third-div {
+    display: flex;
+}
+
+.first-div {
+    align-items: center;
+    justify-content: right;
+}
+
+.double-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.third-div {
+    align-items: center;
+    justify-content: left;
+}
+
+.supervisor {
+    border-top: 4px solid rgba(69,211,211,1.000);
+}
+
+.team-builder {
+    border-top: 4px solid rgba(234,83,83,1.000);
+}
+
+.karma {
+    border-top: 4px solid 	rgba(252,175,74,1.000);
+}
+
+.calculator {
+    border-top: 4px solid rgba(84,158,242,1.000);
+}
+
+/* Shadow Hover */
+.shadow-0 {
+    box-shadow: 0 .5rem 1rem rgba(69,211,211,.15);
+}
+
+.shadow-1 {
+    box-shadow: 0 .5rem 1rem rgba(234,83,83,.15);
+}
+
+.shadow-2 {
+    box-shadow: 0 .5rem 1rem rgba(252,175,74,.15);
+}
+
+.shadow-3 {
+    box-shadow: 0 .5rem 1rem rgba(84,158,242,.15);
+}
+
+img {
+    position: absolute;
+    width: 50px;
+    bottom: 40px;
+    right: 40px;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.shake {
+    animation-name: shake;
+    animation-duration: 0.9s;
+    animation-iteration-count: 1;
+}
+
+@media (max-width: 1205px) {
+    .box {
+        padding: 30px;
+        width: 350px;
+        height: 250px;
+    }
+
+    .box.calculator {
+        padding: 25px;
+    }
+
+    img {
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .col-lg-4 {
+        width: 100%;
+    }
+
+    .box {
+        padding: 40px;
+        width: 400px;
+        height: 280px;
+        margin-bottom: 30px;
+    }
+
+    .first-div, .third-div {
+        justify-content: center;
+    }
+
+    img {
+        bottom: 40px;
+        right: 40px;
+        width: 70px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sub-heading {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 491px) {
+    .sub-heading {
+        font-size: 1.6rem;
+    }
+
+    header {
+        padding: 10px;
+        padding-top: 70px;
+        width: 100%;
+    }
+
+    header p {
+        width: 310px;
+        margin: 5px auto;
+        font-size: 13px;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .box {
+        padding: 20px;
+        height: 250px;
+    }
+
+    .double-div {
+        flex-direction: unset;
+    }
+
+    img {
+        width: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 368px) {
+    .sub-heading {
+        font-size: 1.5rem;
+    }
+
+    .main-heading {
+        font-size: 1.5rem;
+    }
+
+    header {
+        padding: 5px;
+        padding-top: 50px;
+    }
+
+    header p {
+        width: 320px;
+    }
+
+    .row {
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .box {
+        padding: 15px;
+        padding-top: 30px;
+        width: 300px;
+        height: 250px;
+    }
+
+    img {
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+    }
+}
