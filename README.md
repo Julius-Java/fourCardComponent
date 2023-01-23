@@ -25,13 +25,13 @@ Users should be able to:
 ![](./screenshot/fourCardSection-Desktop.png)
 - Desktop View
 
-![](./screenshot/fourCardSection-Desktop.png)
+![](./screenshot/fourCardSectionMobile.png)
 - Mobile View
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://julius-java.github.io/fourCardComponent/)
 
 ## My process
 
